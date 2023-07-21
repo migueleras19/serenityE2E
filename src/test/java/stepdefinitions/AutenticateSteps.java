@@ -2,7 +2,7 @@ package stepdefinitions;
 
 import io.cucumber.java.en.*;
 
-public class teste2eSteps {
+public class AutenticateSteps {
     @Given("El usuario se encuentra en la pantalla de login")
     public void elUsuarioSeEncuentraEnLaPantallaDeLogin() {
 

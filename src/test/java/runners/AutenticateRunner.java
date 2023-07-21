@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/teste2e.feature",
+        features = "src/test/resources/features/Autenticate.feature",
         glue = "stepdefinitions",
         tags = "",
         snippets = CucumberOptions.SnippetType.CAMELCASE
@@ -14,5 +14,5 @@ import org.junit.runner.RunWith;
 
 )
 
-public class teste2eRunner {
+public class AutenticateRunner {
 }
