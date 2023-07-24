@@ -19,6 +19,7 @@ public class CheckSteps {
     @When("Dar clic en el boton {string}")
     public void darClicEnElBoton(String string) {
 
+
     }
     @When("Completa la informacion de pago")
     public void completaLaInformacionDePago() {

@@ -16,12 +16,15 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '3.6.12'
     testImplementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '3.6.12'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.2.9'
-    testImplementation group: 'junit' , name: 'junit', version: '4.12'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.2.9'
     implementation group: 'org.apache.maven.plugins', name: 'maven-compiler-plugin', version: '3.11.0'
-    implementation group: 'net.serenity-bdd.maven.plugins', name: 'serenity-maven-plugin', version: '2.2.9'
+
 }
 
 test {
     systemProperty 'file.encoding', 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
 }

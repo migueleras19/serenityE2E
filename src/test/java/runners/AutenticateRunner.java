@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/Autenticate.feature",
         glue = "stepdefinitions",
-        tags = "",
+        tags = "@ScenarioNoExamples",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 
 

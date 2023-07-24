@@ -1,15 +1,8 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.*;
-import net.serenitybdd.screenplay.Actor;
-import net.thucydides.core.annotations.Managed;
 
 public class AutenticateSteps {
-
-    @Managed(driver = "chrome")
-    private WebDriver navegador;
-    private Actor actor = Actor.named("actor");
-
     @Given("El usuario se encuentra en la pantalla de login")
     public void elUsuarioSeEncuentraEnLaPantallaDeLogin() {
 
