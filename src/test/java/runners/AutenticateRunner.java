@@ -8,11 +8,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/Autenticate.feature",
         glue = "stepdefinitions",
-        tags = "@ScenarioNoExamples",
+        tags = "stepdefinitions.AutenticateStepDefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
-
-
 )
 
 public class AutenticateRunner {
+
 }
+
