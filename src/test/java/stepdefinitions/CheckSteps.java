@@ -6,10 +6,13 @@ public class CheckSteps {
 
     @Given("El usuario se encuentra en la pagina de verificacion de productos")
     public void elUsuarioSeEncuentraEnLaPaginaDeVerificacionDeProductos() {
+        givenThat(CheckSteps.class).attemptsTo(Open.browserOn().the(LoginPage.class)
+        );
 
     }
     @When("Dar click en el boton {string}")
     public void darClickEnElBoton(String string) {
+
 
     }
     @When("Completa el formulario de informacion")
