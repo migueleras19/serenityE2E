@@ -1,2 +1,20 @@
-# serenityE2E
-Test de E2E ussando serenity bdd gradle 
+# SauceDemo Task - BDD Framework With Cucumber
+
+
+
+### Test Propiedad de  :
+Miguel Eras
+
+Depenciandias
+
+• Java 8 or later \
+• Maven 3 or later \
+• Chrome or Firefox Web Browser
+
+Ejecusion
+
+1. Abrir un terminal y ubicarse en la carpeta del proyecto.
+2.La ejecusion es con el siguiente comando:
+
+gradle --test
+
