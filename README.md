@@ -14,7 +14,7 @@ Depenciandias
 Ejecusion
 
 1. Abrir un terminal y ubicarse en la carpeta del proyecto.
-2.La ejecusion es con el siguiente comando:
+2. La ejecusion es con el siguiente comando:
 
 gradle --test
 
