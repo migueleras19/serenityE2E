@@ -8,8 +8,8 @@ Miguel Eras
 Depenciandias
 
 • Java 8 or later \
-• Maven 3 or later \
-• Chrome or Firefox Web Browser
+• Gradle 7.6.1  \
+• Chrome  Web Browser
 
 Ejecusion
 
