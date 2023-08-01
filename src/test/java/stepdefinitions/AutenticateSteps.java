@@ -4,12 +4,11 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.PerformsTasks;
 import net.serenitybdd.screenplay.actions.Open;
+import net.serenitybdd.screenplay.actions.OpenPage;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import org.openqa.selenium.chrome.ChromeDriver;
 import questions.ElementText;
 import tasks.Login;
 import userinterfaces.LoginPage;
@@ -19,10 +18,18 @@ import static org.hamcrest.CoreMatchers.equalTo;
 
 public class AutenticateSteps {
 
+    private PerformsTasks actor;
+
+    @Before
+    public void prepareStage() {
+        OnStage.setTheStage(new OnlineCast());
+    }
+
     @Given("El usuario se encuentra en la pantalla de login")
-    public void elUsuarioSeEncuentraEnLaPantallaDeLogin(Actor actor) {
-        givenThat(actor).attemptsTo(Open.browserOn().the(LoginPage.class)
-        );
+    public void elUsuarioSeEncuentraEnLaPantallaDeLogin() {
+
+        actor = OnStage.theActorCalled("Usuario");
+        actor.<OpenPage>attemptsTo(Open.browserOn(new LoginPage()));
     }
 
     @When("El usuario ingresa su username {string} y su password {string}")
@@ -35,7 +42,8 @@ public class AutenticateSteps {
     @Then("El usuario se autentica exitosamente presentando la pantalla de inventario")
     public void elUsuarioSeAutenticaExitosamentePresentandoLaPantallaDeInventario() {
         then(OnStage.theActorInTheSpotlight()).should(
-                seeThat(ElementText.of(String.valueOf(LoginPage.class)), equalTo("PRODUCTS"))
+                seeThat("Titulo de la pagina ", ElementText.of
+                        (LoginPage.PRODUCT_TITLE.getCssOrXPathSelector()), equalTo("PRODUCTS"))
         );
     }
 }
