@@ -6,10 +6,12 @@ public class ProductSteps {
 
     @Given("El usuario se encuentra en la pagina de incio de la tienda")
     public void elUsuarioSeEncuentraEnLaPaginaDeIncioDeLaTienda() {
+        //Una vez que el usuario se autentica exitosamente, se presenta la pantalla de inventario
 
     }
     @When("Selecciona el producto {string} y lo agrega al carrito")
     public void seleccionaElProductoYLoAgregaAlCarrito(String string) {
+
 
     }
     @When("Selecciona el producto dos {string} y lo agrega al carrito")
