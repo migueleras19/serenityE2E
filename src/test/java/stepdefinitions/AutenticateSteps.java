@@ -25,6 +25,7 @@ public class AutenticateSteps {
     @Before
     public void prepareStage() {
         OnStage.setTheStage(new OnlineCast());
+
     }
 
     @Given("El usuario se encuentra en la pantalla de login")

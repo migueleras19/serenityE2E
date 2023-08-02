@@ -17,5 +17,4 @@ public class LoginPage extends PageObject {
     public static final Target PRODUCT_TITLE = Target.the("Product")
             .locatedBy(".title");
 
-
 }

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Compra de productos" skipped="0" tests="1" time="0.29" timestamp="2023-08-02 04:08:10"><testcase name="Agregar dos productos al carrito de compras"><error type="java.lang.NullPointerException"/><system-err>null
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)
+stepdefinitions.ProductSteps.seleccionaElProductoYLoAgregaAlCarrito(ProductSteps.java:26)
+✽.Selecciona el producto "Sauce Labs Bike Light" y lo agrega al carrito(file:///media/qacore/data/AutomationsSerenityBdd/serenityE2E/src/test/resources/features/Product.feature:4)
+</system-err></testcase></testsuite>

@@ -2,6 +2,9 @@ package userinterfaces;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class ProductPage {
+
+    public static final Target PRODUCT_TITLE = Target.the("Product")
+            .locatedBy(".title");
     public static final Target ADD_TO_CART_1 = Target.the("add to cart button form product 1").
     locatedBy("//button['add-to-cart-sauce-labs-bike-light']");
 
