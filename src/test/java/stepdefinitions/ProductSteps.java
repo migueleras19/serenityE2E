@@ -1,24 +1,19 @@
 package stepdefinitions;
 
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import tasks.AddProductsToCart;
-import tasks.Login;
+import userinterfaces.ProductPage;
 
-import java.util.ArrayList;
-import java.util.List;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class ProductSteps {
-    private String actor = "user";
-    private boolean isUserLoggedIn = false;
-    private String username = "standard_user"; // Replace with your actual username
-    private String password = "secret_sauce"; // Replace with your actual password
-    private List<String> selectedProducts = new ArrayList<>();
-
     @Before
     public void prepareStage() {
         OnStage.setTheStage(new OnlineCast());
@@ -26,24 +21,28 @@ public class ProductSteps {
 
     @Given("El usuario se encuentra en la pagina de incio de la tienda")
     public void elUsuarioSeEncuentraEnLaPaginaDeIncioDeLaTienda() {
-        if (!isUserLoggedIn) {
-            OnStage.theActorCalled(actor).attemptsTo(Login.with(username, password));
-            isUserLoggedIn = true;
-        }
+        OnStage.theActorCalled("Usuario");
     }
 
     @When("Selecciona el producto {string} y lo agrega al carrito")
     public void seleccionaElProductoYLoAgregaAlCarrito(String producto) {
-        selectedProducts.add(producto);
+        OnStage.theActorInTheSpotlight().attemptsTo(new AddProductsToCart());
     }
 
     @When("Selecciona el producto dos {string} y lo agrega al carrito")
-    public void seleccionaElProductoDosYLoAgregaAlCarrito(String productodos) {
-        selectedProducts.add(productodos);
+    public void selecciona_el_producto_dos_y_lo_agrega_al_carrito(String productoDos) {
+        OnStage.theActorInTheSpotlight().attemptsTo(new AddProductsToCart());
     }
 
-    @Then("El usuario debe observer los dos productos seleccionados")
-    public void elUsuarioDebeObserverLosDosProductosSeleccionados() {
-        OnStage.theActorInTheSpotlight().attemptsTo(AddProductsToCart.named(selectedProducts));
+    @And("El usuario hace click en el carrito de compras")
+    public void elUsuarioHaceClickEnElCarritoDeCompras() {
+        OnStage.theActorInTheSpotlight().attemptsTo(WaitUntil.the(ProductPage.CART_BUTTON, isVisible()).forNoMoreThan(30).seconds());
+        OnStage.theActorInTheSpotlight().attemptsTo(Click.on(ProductPage.CART_BUTTON));
+    }
+
+    @And("El usuario hace click en el boton {string}")
+    public void elUsuarioHaceClickEnElBoton(String button) {
+        OnStage.theActorInTheSpotlight().attemptsTo(WaitUntil.the(ProductPage.CHECKOUT_BUTTON, isVisible()).forNoMoreThan(30).seconds());
+        OnStage.theActorInTheSpotlight().attemptsTo(AddProductsToCart.clickOnCheckoutButton());
     }
 }

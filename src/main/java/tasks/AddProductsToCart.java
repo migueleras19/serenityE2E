@@ -4,36 +4,26 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import userinterfaces.ProductPage;
 
-import java.util.List;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class AddProductsToCart implements Task {
 
-    private List<String> productos;
-
-    public  AddProductsToCart(List<String> productos) {
-        this.productos = productos;
-    }
-
-    public static Performable named(List<String> productos) {
-        return new AddProductsToCart(productos);
-    }
-
-    public static Performable clickOnCartButton() {
-        return Click.on(ProductPage.CART_BUTTON);
-    }
-
     @Override
     public <T extends Actor> void performAs(T actor) {
-        for (String producto : productos) {
-            actor.attemptsTo(Click.on(ProductPage.ADD_TO_CART_1.of(producto)));
-            actor.attemptsTo(Click.on(ProductPage.ADD_TO_CART_2.of(producto)));
-        }
-
+        actor.attemptsTo(WaitUntil.the(ProductPage.ADD_TO_CART_1, isVisible()).forNoMoreThan(30).seconds());
+        actor.attemptsTo(Click.on(ProductPage.ADD_TO_CART_1));
+        actor.attemptsTo(WaitUntil.the(ProductPage.ADD_TO_CART_2, isVisible()).forNoMoreThan(30).seconds());
+        actor.attemptsTo(Click.on(ProductPage.ADD_TO_CART_2));
         actor.attemptsTo(
-                Click.on(ProductPage.CART_BUTTON),
-                Click.on(ProductPage.CHECKOUT_BUTTON)
+                WaitUntil.the(ProductPage.CART_BUTTON, isVisible()).forNoMoreThan(30).seconds(),
+                Click.on(ProductPage.CART_BUTTON)
         );
+    }
+
+    public static Performable clickOnCheckoutButton() {
+        return Click.on(ProductPage.CHECKOUT_BUTTON);
     }
 }

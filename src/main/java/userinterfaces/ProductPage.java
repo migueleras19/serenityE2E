@@ -1,20 +1,18 @@
 package userinterfaces;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class ProductPage {
+public class ProductPage{
 
-    public static final Target PRODUCT_TITLE = Target.the("Product")
-            .locatedBy(".title");
-    public static final Target ADD_TO_CART_1 = Target.the("add to cart button form product 1").
-    locatedBy("//button['add-to-cart-sauce-labs-bike-light']");
+    public static final Target ADD_TO_CART_1 = Target.the("Agregar producto uno").
+            locatedBy("//*[@id=/'add-to-cart-sauce-labs-bike-light'/]");
 
-    public static final Target ADD_TO_CART_2 = Target.the("aad to cart button form product 2").
-    locatedBy("//button['add-to-cart-sauce-labs-bolt-t-shirt']");
+    public static final Target ADD_TO_CART_2 = Target.the("Agregar producto dos").
+            locatedBy("//*[@id=/'add-to-cart-sauce-labs-bolt-t-shirt'/]");
 
     public static final Target CART_BUTTON = Target.the("cart button").
-    locatedBy("//div['shopping_cart_container']/a[@safeclass~'\\bshopping_cart_link\\b']");
+            locatedBy("#shopping_cart_container > a");
 
     public static final Target CHECKOUT_BUTTON = Target.the("checkout button").
-    locatedBy("//button[#'checkout']");
+            locatedBy("//button[#'checkout']");
 
 }
