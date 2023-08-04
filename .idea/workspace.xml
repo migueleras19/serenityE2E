@@ -7,26 +7,27 @@
     <list default="true" id="fb9cb8f9-e208-46f3-b612-86178b9bd1af" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/AddProductsToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/AddProductsToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/userinterfaces/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterfaces/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/CheckRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/CheckRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ProductSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Autenticate.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Autenticate.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Check.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Check.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Product.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Product.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/6ada21c4fafeb3467d5337971daf9ca87462ae0c8e76daa5ae40889994b9acca.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/6ada21c4fafeb3467d5337971daf9ca87462ae0c8e76daa5ae40889994b9acca.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/6ada21c4fafeb3467d5337971daf9ca87462ae0c8e76daa5ae40889994b9acca.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/6ada21c4fafeb3467d5337971daf9ca87462ae0c8e76daa5ae40889994b9acca.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/84e53e69edf271f4a8cc3952f844f97d230f2721fe8e4bd4525b4f26a419fd0e.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/84e53e69edf271f4a8cc3952f844f97d230f2721fe8e4bd4525b4f26a419fd0e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/84e53e69edf271f4a8cc3952f844f97d230f2721fe8e4bd4525b4f26a419fd0e.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/84e53e69edf271f4a8cc3952f844f97d230f2721fe8e4bd4525b4f26a419fd0e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-6ada21c4fafeb3467d5337971daf9ca87462ae0c8e76daa5ae40889994b9acca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-6ada21c4fafeb3467d5337971daf9ca87462ae0c8e76daa5ae40889994b9acca.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-84e53e69edf271f4a8cc3952f844f97d230f2721fe8e4bd4525b4f26a419fd0e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-84e53e69edf271f4a8cc3952f844f97d230f2721fe8e4bd4525b4f26a419fd0e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d7be020edbd16c173f324b2213aab35d700b5af58233ba23ef696cb0d154c909.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d7be020edbd16c173f324b2213aab35d700b5af58233ba23ef696cb0d154c909.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b774597441fc349909489e1bd658b761e87a9bd1d5b9fd0532b67a6c6b26eabf_screenshots.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d7be020edbd16c173f324b2213aab35d700b5af58233ba23ef696cb0d154c909.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d7be020edbd16c173f324b2213aab35d700b5af58233ba23ef696cb0d154c909.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d7be020edbd16c173f324b2213aab35d700b5af58233ba23ef696cb0d154c909.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d7be020edbd16c173f324b2213aab35d700b5af58233ba23ef696cb0d154c909.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +109,7 @@
       <recent name="D:\Serenity\E2E\serenityE2E\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Autenticate">
+  <component name="RunManager" selected="Cucumber Java.Feature: Product">
     <configuration name="Feature: Autenticate" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Autenticate.feature" />
@@ -177,7 +178,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AutenticateRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -190,7 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;runners.AutenticateRunner&quot;" />
+            <option value="&quot;stepdefinitions.TestRunner&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -225,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: Autenticate" />
-        <item itemvalue="Gradle.TestSuite" />
-        <item itemvalue="Cucumber Java.Scenario: Agregar dos productos al carrito de compras" />
         <item itemvalue="Cucumber Java.Feature: Product" />
-        <item itemvalue="Gradle.AutenticateRunner" />
+        <item itemvalue="Gradle.TestSuite" />
+        <item itemvalue="Gradle.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Agregar dos productos al carrito de compras" />
+        <item itemvalue="Cucumber Java.Feature: Autenticate" />
       </list>
     </recent_temporary>
   </component>
@@ -308,5 +309,6 @@
     <SUITE FILE_PATH="coverage/serenityE2E$Feature__Product.ic" NAME="Feature: Product Coverage Results" MODIFIED="1690995599932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/serenityE2E$TestSuite.ic" NAME="TestSuite Coverage Results" MODIFIED="1691187484339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

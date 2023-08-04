@@ -1,9 +1,11 @@
-Feature: COmpra de productos
+Feature: Compra de productos
+
+  @test
   Scenario: Verificacion de los productos
     Given El usuario se encuentra en la pagina de verificacion de productos
-    When Dar click en el boton "Checkout"
-    And Completa el formulario de informacion
-    And Dar clic en el boton "continue"
-    And Completa la informacion de pago
-    And Dar clic en el boton "finish"
-    Then Se muestra el mensaje de "Thank you for your order!"
+    When  El usuaio da click al boton "Checkout"
+    And   El usuario completa el formulario de informacion
+    And   El usuario da click al boton "continue"
+    And   El usuaio completa la informacion de pago
+    And   El usuario da click al boton "finish"
+    Then  El usuario identifica el de "Thank you for your order!"

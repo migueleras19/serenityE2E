@@ -1,4 +1,6 @@
 Feature: Compra de productos
+
+  @test
   Scenario: Agregar dos productos al carrito de compras
     Given El usuario se encuentra en la pagina de incio de la tienda
     When Selecciona el producto "Sauce Labs Bike Light" y lo agrega al carrito

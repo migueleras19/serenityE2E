@@ -1,10 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Compra de productos" skipped="0" tests="1" time="30.15" timestamp="2023-08-03 06:15:57"><testcase name="Agregar dos productos al carrito de compras"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by [Agregar producto uno located with: #add-to-cart-sauce-labs-bike-light]" type="java.lang.AssertionError">
-Expected: an element that is visible
-     but: no matching element found by [Agregar producto uno located with: #add-to-cart-sauce-labs-bike-light]</failure><system-err>
-Expected: an element that is visible
-     but: no matching element found by [Agregar producto uno located with: #add-to-cart-sauce-labs-bike-light]
-tasks.AddProductsToCart.performAs(AddProductsToCart.java:16)
-stepdefinitions.ProductSteps.seleccionaElProductoYLoAgregaAlCarrito(ProductSteps.java:29)
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Compra de productos" skipped="0" tests="1" time="12.36" timestamp="2023-08-04 05:43:15"><testcase name="Agregar dos productos al carrito de compras"><error message="Error communicating with the remote browser. It may have died.&#10;Build info: version: '4.8.0', revision: '267030adea'&#10;System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-76-generic', java.version: '17.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [baebdddd69a96754e414050dab6e9724, get {url=https://www.saucedemo.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WoTybL}, goog:chromeOptions: {debuggerAddress: localhost:44769}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44769/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: baebdddd69a96754e414050dab6e9724" type="org.openqa.selenium.remote.UnreachableBrowserException">Error communicating with the remote browser. It may have died.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-76-generic', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baebdddd69a96754e414050dab6e9724, get {url=https://www.saucedemo.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WoTybL}, goog:chromeOptions: {debuggerAddress: localhost:44769}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44769/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: baebdddd69a96754e414050dab6e9724</error><system-err>Error communicating with the remote browser. It may have died.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-76-generic', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baebdddd69a96754e414050dab6e9724, get {url=https://www.saucedemo.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WoTybL}, goog:chromeOptions: {debuggerAddress: localhost:44769}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44769/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: baebdddd69a96754e414050dab6e9724
+tasks.Login.performAs(Login.java:26)
+stepdefinitions.ProductSteps.elUsuarioSeEncuentraEnLaPaginaDeIncioDeLaTienda(ProductSteps.java:26)
 io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
 io.cucumber.java.Invoker.invoke(Invoker.java:24)
 io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
