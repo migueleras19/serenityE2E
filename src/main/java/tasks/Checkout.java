@@ -1,6 +1,7 @@
 package tasks;
 
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
@@ -11,13 +12,16 @@ public class Checkout implements Task {
     private final String lastName;
     private final String postalCOde;
 
-    public Checkout (String firstName, String lastName, String postalCOde){
+    public Checkout  (String firstName, String lastName, String postalCOde){
         this.firstName = firstName;
         this.lastName = lastName;
         this.postalCOde = postalCOde;
-
     }
 
+    public static Performable withData(String miguel, String eras, String number) {
+
+        return null;
+    }
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
