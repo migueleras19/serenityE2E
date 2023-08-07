@@ -1,13 +1,10 @@
 package stepdefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import userinterfaces.CheckoutPage;
@@ -18,11 +15,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 import static org.hamcrest.CoreMatchers.is;
 
 public class CheckSteps {
-    @Before
-    public void prepareStage(){
-        OnStage.setTheStage(new OnlineCast());
-        OnStage.theActorCalled("Usuario");
-    }
+
     @Given("El usuario completa el formulario de informacion")
     public void el_usuario_completa_el_formulario_de_informacion() {
         theActorInTheSpotlight().attemptsTo(
@@ -33,7 +26,7 @@ public class CheckSteps {
                 Click.on(CheckoutPage.CONTINUE_BUTTON));
     }
     @When("El usuario da click al boton {string}")
-    public void el_usuario_da_click_al_boton(String string) {
+    public void el_usuario_da_click_al_boton(String button) {
         theActorInTheSpotlight().attemptsTo(WaitUntil.the(CheckoutPage.FINISH_BUTTON, isVisible()).forNoMoreThan(15).seconds(),
                 Click.on(CheckoutPage.FINISH_BUTTON));
     }

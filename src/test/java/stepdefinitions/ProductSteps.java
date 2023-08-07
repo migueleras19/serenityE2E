@@ -1,29 +1,29 @@
 package stepdefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import tasks.AddProductsToCart;
-import tasks.Login;
+import userinterfaces.LoginPage;
 import userinterfaces.ProductPage;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class ProductSteps {
 
-    @Before
-    public void prepareStage() {
-        OnStage.setTheStage(new OnlineCast());
-    }
+
+
+    
     @Given("El usuario se encuentra en la pagina de incio de la tienda")
     public void elUsuarioSeEncuentraEnLaPaginaDeIncioDeLaTienda() {
+        // You can add any necessary assertions or interactions here to verify the page state
         OnStage.theActorCalled("Usuario")
-                .attemptsTo(Login.withCredentials("standard_user", "secret_sauce"));
+        .wasAbleTo(Open.browserOn(new LoginPage(/*"https://www.saucedemo.com/"*/)));
+        
     }
     @When("Selecciona el producto {string} y lo agrega al carrito")
     public void seleccionaElProductoYLoAgregaAlCarrito(String producto) {
